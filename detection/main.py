@@ -68,8 +68,7 @@ if __name__ == "__main__":
 
         # いろいろな検知方法を試す
         result,image = anomly_detect.find_rect_of_target_color(undistort_image)
-
-
+        result, image = anomly_detect.find_by_labeling(undistort_image)
         #写真保存
         save_frame_camera(image, row["camera_no"], dir_path, ext='jpg')
 
