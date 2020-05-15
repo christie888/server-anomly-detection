@@ -14,13 +14,13 @@ import undistort
 import anomly_detect
 
 def readCameCSV(camera_para_file):
-    print("カメラパラメータcsvを読み込み",camera_para_file)
+    print("****",camera_para_file,"から、カメラパラメータを読み込み")
     cama_df=pd.read_csv(camera_para_file, sep=',')
     return cama_df
 
 
 def save_frame_camera(image, camera_no, dir_path, ext='jpg'):
-    print("写真記録を残す")
+    print("****写真記録を残す")
     """
     os.makedirs(dir_path, exist_ok=True)
     base_path = os.path.join(dir_path, str(camera_no))
@@ -29,12 +29,12 @@ def save_frame_camera(image, camera_no, dir_path, ext='jpg'):
     pass
 
 def writeToFile(result,rak_no,server_no):
-    records_path = "../data/camera_para/records"
-    print(records_path,"結果をファイルに書き込む")
+    records_path = "../data/records"
+    print("****",records_path,"のファイルに結果を書き込む")
     pass
 
 def sendMail():
-    print("メールで通知")
+    print("****メールで通知")
     pass
 
 def resultProcess(result,rak_no,server_no):
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     camera_para_file=os.path.join(camera_para_path, "camera_loc.csv")
 
     cama_df=readCameCSV(camera_para_file)
-    print(cama_df)
+    #print(cama_df)
     for index, row in cama_df.iterrows():
         print("bus番号",row["bus_no"],"カメラ番号:",row["camera_no"],"ラック番号:",row["rak_no"],"サーバ番号:",row["server_no"])
         undistort_image =undistort.createUndistortImage(row)

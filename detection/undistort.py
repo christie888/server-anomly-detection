@@ -15,7 +15,7 @@ from tkinter import messagebox
 
 def createUndistortImage(camra_para):
     # argument check
-    print("画像を撮影、歪み補正する")
+    print("****画像を撮影、歪み補正する")
 
     undistort_image =""
     """

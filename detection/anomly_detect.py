@@ -3,7 +3,7 @@ import numpy as np
 
 
 def find_rect_of_target_color(image):
-    print("検知方法「find rectangle of target color」を利用")
+    print("****検知方法「find rectangle of target color」を利用")
     result=None
     """
     hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV_FULL)
@@ -25,7 +25,7 @@ def find_rect_of_target_color(image):
     return result,image
 
 def find_by_labeling(image):
-    print("検知方法「find_by_labeling」を利用")
+    print("****検知方法「find_by_labeling」を利用")
     result = None
     """
     https://dronebiz.net/tech/opencv/labeling
