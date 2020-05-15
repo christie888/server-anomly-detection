@@ -1,1 +1,2 @@
-usb-0:1.2:1.0-video-index0,1,1
+bus_no,camera_no,rak_no,server_no
+usb-0:1.2:1.0-video-index0,1,1,1
