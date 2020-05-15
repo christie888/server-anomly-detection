@@ -1,4 +1,34 @@
-pip freeze > requirements.txt
+.
+├── README
+├── data
+│   ├── camera_para
+│   ├── label_data
+│   ├── records
+│   └── temp
+├── detection
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── anomly_detect.py
+│   ├── fisheye.py
+│   ├── main.py
+│   └── undistort.py
+├── requirements.txt
+├── tests
+│   ├── __init__.py
+│   ├── checker.py
+│   ├── detect_with_label.py
+│   ├── file_delete.py
+│   ├── find_color.py
+│   ├── fisheye.py
+│   ├── imgconcat.py
+│   └── undistort.py
+└── venv
+    ├── bin
+    ├── include
+    ├── lib
+    └── pyvenv.cfg
+    
+    pip freeze > requirements.txt
 
 
 pip install -r requirements.txt
